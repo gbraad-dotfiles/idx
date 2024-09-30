@@ -9,6 +9,7 @@
   
   idx = {
     extensions = [
+      "ms-vscode.Theme-TomorrowKit"
       "tailscale.vscode-tailscale"
     ];
     workspace = {
@@ -18,6 +19,8 @@
     
   };
 
-  services.docker.enable = true;
-  services.tailscale.enable = true;
+  services = {
+    docker.enable = true;
+    #tailscale.enable = true;
+  };
 }
