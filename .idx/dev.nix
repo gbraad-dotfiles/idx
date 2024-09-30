@@ -1,13 +1,14 @@
 { pkgs, ... }: {
-  channel = "stable-23.11";
+  channel = "stable-24.05";
   
  packages = [
-    pkgs.tailscale
+    pkgs.stow
     pkgs.screen
     pkgs.tmux
     pkgs.zsh
     pkgs.powerline
     pkgs.podman
+    pkgs.tailscale
   ];
   
   env = {};
