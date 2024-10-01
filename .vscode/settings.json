@@ -1,0 +1,35 @@
+{
+    "workbench.startupEditor": "none",
+    "editor.fontFamily": "'SauceCodePro NF', 'Source Code Pro', Consolas, monospace",
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.fontFamily": "'SauceCodePro NF', 'Source Code Pro', Consolas, monospace",
+    "editor.minimap.enabled": false,
+    "editor.suggestSelection": "first",
+    "workbench.colorTheme": "Tomorrow Night Bright",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.sideBar.location": "right",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#5f00af",
+        "statusBar.noFolderBackground": "#5f00af",
+        "statusBar.debuggingBackground": "#5f00af"
+    },
+    "workbench.editor.showTabs": "none",
+    "window.titleBarStyle": "native",
+    "window.menuBarVisibility": "toggle",
+    "editor.inlineSuggest.enabled": true,
+    "git.openRepositoryInParentFolders": "never",
+    "editor.cursorSurroundingLines": 50,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.statusBar.visible": false,
+    "workbench.activityBar.location": "top",
+    "editor.stickyScroll.enabled": false,
+    "editor.fontWeight": "normal",
+    "editor.fontSize": 13,
+    "editor.lineHeight": 1.5,
+    "editor.letterSpacing": 0,
+    "debug.console.fontSize": 12,
+    "window.commandCenter": false,
+}
