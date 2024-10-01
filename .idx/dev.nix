@@ -23,6 +23,11 @@
     ];
     workspace = {
       onCreate = {
+        setup-hostname = ''
+          cat >> /etc/hostname <<EOF
+          idx-devenv
+          EOF
+        '';
         # this is to fix Podman: https://github.com/gbraad-devenv/idx/issues/3
         setup-podman = ''
           mkdir /etc/containers/
