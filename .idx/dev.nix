@@ -2,6 +2,7 @@
   channel = "stable-24.05";
   
   packages = [
+    pkgs.git
     pkgs.tailscale
     pkgs.screen
     pkgs.tmux
