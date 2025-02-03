@@ -10,6 +10,7 @@
     pkgs.podman
     pkgs.stow
     pkgs.openssh
+    pkgs.cadaver
   ];
   
   env = {
