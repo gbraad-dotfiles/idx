@@ -28,6 +28,12 @@
     ];
     workspace = {
       onCreate = {
+        install-dotfiles = ''
+          git clone https://github.com/gbraad/dotfiles /tmp/dotfiles
+          /tmp/dotfiles/install.sh
+        '';
+      };
+      onStart = {
         setup-hostname = ''
           cat >> /etc/hostname <<EOF
           idx-workspace
@@ -41,12 +47,6 @@
           EOF
           mkdir /var/tmp
         '';
-        install-dotfiles = ''
-          git clone https://github.com/gbraad/dotfiles /tmp/dotfiles
-          /tmp/dotfiles/install.sh
-        '';
-      };
-      onStart = {
         start-tailscale = ''
           screen -d -m tailscaled \
             --tun="userspace-networking" \
