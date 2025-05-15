@@ -22,12 +22,15 @@
     extensions = [
       "ms-vscode.Theme-TomorrowKit"
       "tailscale.vscode-tailscale"
+      "gbraad.analogue-clock"
+      "gbraad.dotfiles-checker"
+      "gbraad.dotfiles-tools"
     ];
     workspace = {
       onCreate = {
         setup-hostname = ''
           cat >> /etc/hostname <<EOF
-          idx-devenv
+          idx-workspace
           EOF
         '';
         # this is to fix Podman: https://github.com/gbraad-devenv/idx/issues/3
@@ -48,6 +51,11 @@
           screen -d -m tailscaled \
             --tun="userspace-networking" \
             --socket=/var/run/tailscale/tailscaled.sock
+        '';
+        start-code-tunnel = ''
+          screen -d -m ~/.local/bin/code tunnel \
+             --accept-server-license-terms \
+             --name idx-workspace
         '';
         default.openFiles = [];
       };
