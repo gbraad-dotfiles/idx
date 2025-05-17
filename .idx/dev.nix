@@ -12,6 +12,8 @@
     pkgs.stow
     pkgs.openssh
     pkgs.cadaver
+    pkgs.python311
+    pkgs.python311Packages.pip
   ];
   
   env = {
