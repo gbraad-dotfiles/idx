@@ -2,12 +2,14 @@
   channel = "stable-24.05";
   
   packages = [
+    (pkgs.vim_configurable.override {
+      python3 = pkgs.python3;
+    })
     pkgs.git
     pkgs.tailscale
     pkgs.screen
     pkgs.tmux
     pkgs.zsh
-    pkgs.powerline
     pkgs.podman
     pkgs.stow
     pkgs.openssh
